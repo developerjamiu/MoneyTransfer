@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         sessionManager.setLogin(false);
 
         // Launching the Login Activity
-        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
         startActivity(intent);
         finish();
     }

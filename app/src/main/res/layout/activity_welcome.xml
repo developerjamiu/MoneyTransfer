@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/money"
+    android:orientation="vertical"
+    android:weightSum="100"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:text="Welcome to Transfer Money"
+        android:layout_margin="48dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="36sp"/>
+
+    <Button
+        android:onClick="goToLogin"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_weight="5"
+        android:text="Login"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="goToRegister"
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Register"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

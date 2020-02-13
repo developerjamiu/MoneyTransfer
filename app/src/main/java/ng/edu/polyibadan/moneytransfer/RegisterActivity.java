@@ -79,14 +79,14 @@ public class RegisterActivity extends AppCompatActivity {
 
                         try {
                             JSONObject headers = response.getJSONObject("headers");
-                            String token = headers.getString("x-auth-token");
+                            String token = headers.getString("X-Auth-Token");
                             sessionManager.setToken(token);
 
                             sessionManager.setLogin(true);
 
                             JSONObject data = response.getJSONObject("data");
 
-                            String serverId = data.getString("user");
+                            String serverId = data.getString("_id");
                             sessionManager.setServerId(serverId);
 
                             String fullName = data.getString("fullName");
@@ -188,5 +188,10 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void haveAccount(View view) {
         startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(RegisterActivity.this, WelcomeActivity.class));
     }
 }

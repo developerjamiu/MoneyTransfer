@@ -124,4 +124,8 @@ public class TmTransferActivity extends AppCompatActivity {
         intent.putExtra("emailAddress", emailAddressResponse);
         startActivity(intent);
     }
+
+    public void goBack(View view) {
+        startActivity(new Intent(TmTransferActivity.this, MainActivity.class));
+    }
 }
