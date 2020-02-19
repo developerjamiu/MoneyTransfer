@@ -1,4 +1,4 @@
-# MoneyTransfer
+# MoneyTransfer (Android Native)
 This is a Money Transfer Project developed to explore the Flutterwave Rave API
 
 ---------------------------------------------------------------------------
